@@ -1,0 +1,76 @@
+﻿设置用户名和邮箱
+git config --global user.name "Young"
+git config --global user.email "912865779@qq.com"
+
+
+1.初始化仓库
+git init
+
+2.查看仓库状态
+git status
+
+-- master（主分支）
+
+3. 添加文件到仓库 
+git add <文件名>
+
+4. 提交代码
+git commit -m <备注>
+
+5. 查看提交日志
+git log
+
+6. 回滚上一个版本
+git reset --hard HEAD^
+
+7.回滚指定版本
+git reset --hard <id>
+
+8.查看回滚记录
+git reflog
+
+9.查看工作区删除的文件
+git checkout
+
+10.恢复文件
+git checkout <文件名>  （在工作区删除的文件）
+
+11.在版本库删除文件
+git rm <文件>  （不能恢复）
+
+
+
+--工作区  我们正常操作的文件夹
+--版本库  提交后的代码（看不见）
+
+
+12. 忽略不需要管理的文件
+	建立一个 .gitignore 文件，
+	在这个文件中写不需要管理的路径
+
+13.分支
+	查看分支: git branch
+	创建分支: git branch <分支名称>
+	切换分支: git checkout <分支名称>
+	创建并且切换 : git checkout -b <分支名称>
+	合并分支 : git merge <分支名称>
+	删除分支: git branch -d <分支名称>
+
+
+生成公钥
+ssh-keygen -t rsa -C '912865779@qq.com'
+
+
+添加远程仓库
+git remote add origin <仓库地址>
+
+git remote add origin 'git@github.com:Young-zl/H5171225.git'
+
+把本地代码推送到远程仓库
+git push -u origin master
+
+从远程仓库克隆代码
+git clone <仓库>
+
+
+https://github.com/Young-zl/v-blog
